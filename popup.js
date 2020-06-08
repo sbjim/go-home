@@ -1,11 +1,23 @@
 $('#setGoHomeTime').on('click',function(){
 		var go_home_time=prompt("请输入下班时间","18:00"); // 弹出input框
+
 		localStorage.setItem("go_home_time", go_home_time);
+console.log(go_home_time)
+})
+$('#to_github').on('click',function(){
+		window.open('https://github.com/sbjim/go-home')
 
 })
 
+var d = new Date(),
+    dd = d.getDay(),
+    friday = new Date((5 - dd)*(3600*24*1000)+d.getTime()).getTime();
+
+
 // 下班时间
-var go_home_time = localStorage.getItem("go_home_time") != 'null' ? localStorage.getItem("go_home_time") : '18:00';
+var go_home_time = localStorage.getItem("go_home_time")
+
+var go_home_time = go_home_time == null  ?  '18:00' :localStorage.getItem("go_home_time");
 
 
 // 返回指定格式的时间
@@ -31,6 +43,7 @@ var time1 = document.getElementById('time1')
 var time2 = document.getElementById('time2')
 var time3 = document.getElementById('time3')
 var time4 = document.getElementById('time4')
+var now_time = document.getElementById('now_time')
 var a = ["日", "一", "二", "三", "四", "五", "六"];
 var day_lists = [
 	'又是美好的一天！',
@@ -55,10 +68,12 @@ var week = (new Date()).getDay();
 var str = "今天是星期" + a[week] + '，'+day_lists[Math.floor(Math.random()*day_lists.length)]
 data.innerHTML = str;
 var timer = setInterval(function () {
-	console.log(week)
+    console.log(go_home_time)
+
+
 	var str = new Date().Format("yyyy-MM-dd ")+go_home_time;
-    // var str = '2020/06/08 17:30:00'  // start time
-    var endweek = '2020/06/12 17:30:00'  // end time week
+	var endweek = new Date(friday).Format("yyyy-MM-dd ")+go_home_time;
+
     var endweekdata = Date.parse(new Date(endweek)) / 1000
     var enddate = Date.parse(new Date(str)) / 1000
     var nowdata = Date.parse(new Date()) / 1000
@@ -77,7 +92,8 @@ var timer = setInterval(function () {
         var weeeks = weektime % 60
         time3.innerHTML = '距离周末还有：' + weeekmin + '分' + s + '秒'
         time4.innerHTML = '距离周末还有：' + weektime + '秒'
-    } else {
+    }
+    else {
         time = time * -1
         var min = parseInt(time / 60)
         var s = time % 60
@@ -95,7 +111,11 @@ var timer = setInterval(function () {
         var weeeks = weektime % 60
         time3.innerHTML = '距离周末还有：' + weeekmin + '分' + s + '秒'
         time4.innerHTML = '距离周末还有：' + weektime + '秒'
+
+
     }
+            now_time.innerHTML = new Date().Format("yyyy-MM-dd h:m:s")
+
 
 }, 150)
 
