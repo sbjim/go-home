@@ -2,9 +2,6 @@
 	"name": "Hurry home & 下班回家",
 	"version": "1.0",
 	"description": "一心只摸圣贤鱼~~~~",
-	"browser_action": {
-		"default_icon": "icon.png"
-	},
 	"permissions": [
 	    "tabs",
 	    "storage",
