@@ -17,7 +17,7 @@ var d = new Date(),
 // 下班时间
 var go_home_time = localStorage.getItem("go_home_time")
 
-var go_home_time = go_home_time == null  ?  '18:00' :localStorage.getItem("go_home_time");
+var go_home_time = go_home_time == null || go_home_time == undefined   ?  '18:00' :localStorage.getItem("go_home_time");
 
 
 // 返回指定格式的时间

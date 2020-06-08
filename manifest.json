@@ -3,12 +3,7 @@
 	"version": "1.0",
 	"description": "一心只摸圣贤鱼~~~~",
 	"permissions": [
-	    "tabs",
 	    "storage",
-	    "webNavigation",
-	    "notifications",
-	    "activeTab",
-	    "cookies",
 	    "http://*/*",
 	    "https://*/*"
 	],
