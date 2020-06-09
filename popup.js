@@ -1,7 +1,13 @@
 $('#setGoHomeTime').on('click',function(){
-		var go_home_time=prompt("请输入下班时间","18:00"); // 弹出input框
 
-		localStorage.setItem("go_home_time", go_home_time);
+		var go_home_time = localStorage.getItem("go_home_time")
+		go_home_time = go_home_time == 'null' || go_home_time == undefined   ?  '18:00' :localStorage.getItem("go_home_time");
+		go_home_time=prompt("请输入下班时间",go_home_time); // 弹出input框
+
+		if(go_home_time != null){
+			localStorage.setItem("go_home_time", go_home_time);
+		}
+
 console.log(go_home_time)
 })
 $('#to_github').on('click',function(){
@@ -13,23 +19,16 @@ var d = new Date(),
     dd = d.getDay(),
     friday = new Date((5 - dd)*(3600*24*1000)+d.getTime()).getTime();
 
-
-// 下班时间
-var go_home_time = localStorage.getItem("go_home_time")
-
-var go_home_time = go_home_time == null || go_home_time == undefined   ?  '18:00' :localStorage.getItem("go_home_time");
-
-
 // 返回指定格式的时间
-Date.prototype.Format = function (fmt) { //author: meizz 
+Date.prototype.Format = function (fmt) { //author: meizz
     var o = {
-        "M+": this.getMonth() + 1, //月份 
-        "d+": this.getDate(), //日 
-        "h+": this.getHours(), //小时 
-        "m+": this.getMinutes(), //分 
-        "s+": this.getSeconds(), //秒 
-        "q+": Math.floor((this.getMonth() + 3) / 3), //季度 
-        "S": this.getMilliseconds() //毫秒 
+        "M+": this.getMonth() + 1, //月份
+        "d+": this.getDate(), //日
+        "h+": this.getHours(), //小时
+        "m+": this.getMinutes(), //分
+        "s+": this.getSeconds(), //秒
+        "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+        "S": this.getMilliseconds() //毫秒
     };
     if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
     for (var k in o)
@@ -68,11 +67,13 @@ var week = (new Date()).getDay();
 var str = "今天是星期" + a[week] + '，'+day_lists[Math.floor(Math.random()*day_lists.length)]
 data.innerHTML = str;
 var timer = setInterval(function () {
-    console.log(go_home_time)
+	// 下班时间
+	var go_home_time = localStorage.getItem("go_home_time")
+	go_home_time = go_home_time == null || go_home_time == undefined   ?  '18:00' :localStorage.getItem("go_home_time");
 
 
-	var str = new Date().Format("yyyy-MM-dd ")+go_home_time;
-	var endweek = new Date(friday).Format("yyyy-MM-dd ")+go_home_time;
+		var str = new Date().Format("yyyy-MM-dd ")+go_home_time;
+		var endweek = new Date(friday).Format("yyyy-MM-dd ")+go_home_time;
 
     var endweekdata = Date.parse(new Date(endweek)) / 1000
     var enddate = Date.parse(new Date(str)) / 1000
@@ -118,6 +119,3 @@ var timer = setInterval(function () {
 
 
 }, 150)
-
-
-
