@@ -8,6 +8,6 @@
 
 ### 界面效果图
 
-![GITHU.jpg](https://i.loli.net/2020/06/08/SLscXqUjZd8Tluw.png)
+[![t48f2Q.png](https://s1.ax1x.com/2020/06/09/t48f2Q.png)](https://imgchr.com/i/t48f2Q)
 
-![_B_UN`CJSC16~5Y_UU@F@24.png](https://i.loli.net/2020/06/08/si8ZWbaI1SwmRMh.png)
+[![t48hvj.md.png](https://s1.ax1x.com/2020/06/09/t48hvj.md.png)](https://imgchr.com/i/t48hvj)
