@@ -11,3 +11,8 @@
 [![t48f2Q.png](https://s1.ax1x.com/2020/06/09/t48f2Q.png)](https://imgchr.com/i/t48f2Q)
 
 [![t48hvj.md.png](https://s1.ax1x.com/2020/06/09/t48hvj.md.png)](https://imgchr.com/i/t48hvj)
+
+
+
+## WeChat群
+[![t4G0iT.md.jpg](https://s1.ax1x.com/2020/06/09/t4G0iT.md.jpg)](https://imgchr.com/i/t4G0iT)
