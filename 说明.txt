@@ -2,7 +2,7 @@
 Version1.0
 
 	当前版本为测试版本，可能会存在某些Bug。
-		如遇到Bug 请联系WeChat:eeeee-
+		如遇到Bug 请联系WeChat:eeeee- or  提出issues
 
 	Created By:Jim 2020/6/9
 
