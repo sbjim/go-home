@@ -12,21 +12,23 @@
 
 启动`开发者模式`
 
+
+
 点击`加载已解压的扩展程序`
 
-![image-20200610105753219](C:\Users\ABCD\AppData\Roaming\Typora\typora-user-images\image-20200610105753219.png)
+[![to35i6.md.png](https://s1.ax1x.com/2020/06/10/to35i6.md.png)](https://imgchr.com/i/to35i6)
 
 
 
 选中刚刚下载的文件夹
 
-![image-20200610110139516](C:\Users\ABCD\AppData\Roaming\Typora\typora-user-images\image-20200610110139516.png)
+[![to3hIx.md.png](https://s1.ax1x.com/2020/06/10/to3hIx.md.png)](https://imgchr.com/i/to3hIx)
 
 然后返回扩展中心 启动插件
 
 
 
-![image-20200610110251163](C:\Users\ABCD\AppData\Roaming\Typora\typora-user-images\image-20200610110251163.png)
+[![to3fd1.md.png](https://s1.ax1x.com/2020/06/10/to3fd1.md.png)](https://imgchr.com/i/to3fd1)
 
 
 
