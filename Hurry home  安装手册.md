@@ -1,6 +1,6 @@
 # Hurry home  安装手册
 
-[Github下载地址](https://github.com/sbjim/go-home/blob/master/manifest.json "Hurry Home")
+[Github下载地址](https://github.com/sbjim/go-home/ "Hurry Home")
 
 <a href="#install">安装过程</a>
 
