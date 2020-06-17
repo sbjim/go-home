@@ -1,7 +1,7 @@
 # go-home
 
 ## 如果喜欢的话  点击右上角 `Star` 给我个小星星吧~~~
-![visitor badge](https://visitor-badge.glitch.me/badge?page_id=sb.jim.go-home.github.2020.06.17)
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=sb.jim.-juejin-.github.2020.06.17)
 
 
 ## chrome - 计算每天剩余下班时间的插件
