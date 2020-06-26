@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>popup</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body style="width:500px;min-height:100px;padding: 20px">
+
+		<div class="bs-example" data-example-id="simple-list-group">
+			<div class="bs-example" data-example-id="simple-blockquote">
+				<blockquote>
+					<p id="msg">少时诵诗书所所</p>
+				</blockquote>
+			</div>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<div class="row">
+						<div class="col-xs-6 col-md-4">
+							<input type="text" class="form-control" id="input_start_time"  value="09:00" maxlength="5" placeholder="09:00">
+						</div>
+						<div class="col-xs-6 col-md-4">
+							<input type="email" class="form-control" id="input_end_time" value="18:00" maxlength="5" placeholder="18:00">
+						</div>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<p  id="day">距离下班还有：7小时59分59秒</p>
+				</li>
+
+				<li class="list-group-item">
+					<p>距离周末还有：<span id="week">4天7小时59分59秒</span></p>
+				</li>
+
+				<li class="list-group-item">
+					<p>距离月底还有：<span id="month">14天7小时59分59秒</span></p>
+				</li>
+
+<!--				<li class="list-group-item">-->
+<!--					<p>距离出粮还有：<span id="pay">14天3小时04分20秒</span></p>-->
+<!--				</li>-->
+
+			</ul>
+			<div class="bs-example" data-example-id="disabled-nav-link">
+				<!-- <a href="#" id="setGoHomeTime" class="btn btn-default " role="button">Set Go Home Time</a> -->
+
+				<a href="#" id="double_github" class="btn btn-default" role="button">双休</a>
+				<a href="#" id="size_week" class="btn btn-default" role="button">大小周</a>
+				<a href="#" id="single_week" class="btn btn-default" role="button">单休</a>
+
+				<a href="#" id="to_github" class="btn btn-default" role="button">Github</a>
+				<a href="#" class="btn btn-link disabled" role="button">Time：<span id="now_time"></span></a>
+			</div>
+
+
+		</div>
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/moment.js"></script>
+		<script type="text/javascript" src="js/func.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
