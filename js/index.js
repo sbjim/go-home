@@ -49,7 +49,7 @@ $(function() {
 		let to_day = moment().format("DD")  //今天是多少号
 		if (to_day > time_lists['pay_day']) {
 			// 22 > 16  工资在下个月发放
-			console.log(to_day,time_lists['pay_day']);
+			// console.log(to_day,time_lists['pay_day']);
 
 		}else {
 			// 工资在本月发放
