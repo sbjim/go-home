@@ -3,13 +3,16 @@
 
 
 
-## 安装地址:
+## Chrome官网 插件下载地址:
+   
+  chrome商城地址：  [点击下载](https://chrome.google.com/webstore/detail/hurry-home-%E4%B8%8B%E7%8F%AD%E5%9B%9E%E5%AE%B6/ndccpjjadppbehafiojmiknfihpmaodj?hl=zh-CN&authuser=0)
+
 
 ### 安装教程
 
-1. #### 视频演示地址：[bilibili 视频安装演示地址](http://xianbai.me/learn-md/article/syntax/links.html)
+1. #### 视频演示地址：[bilibili 视频安装演示地址](http://xianbai.me/learn-md/article/syntax/links.html)   未处理
 
-2. #### 安装文档： [click my]()
+2. #### 安装文档： [click my](https://github.com/sbjim/go-home/blob/master/Hurry%20home%20%20%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C.md)
 
    
 
