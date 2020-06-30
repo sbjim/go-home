@@ -3,7 +3,7 @@
 
 
 
-## Chrome商场安装地址:
+## Chrome官网 插件下载地址:
    
   chrome商城地址：  [点击下载](https://chrome.google.com/webstore/detail/hurry-home-%E4%B8%8B%E7%8F%AD%E5%9B%9E%E5%AE%B6/ndccpjjadppbehafiojmiknfihpmaodj?hl=zh-CN&authuser=0)
 
