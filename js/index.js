@@ -1,7 +1,7 @@
 $(function() {
 
-	let start_time = 	$("#input_start_time").val()  || "09:00"
-	let end_time = 	$("#input_end_time").val() || "18:00"
+	let start_time = 	$("#hurry-home-input_start_time").val()  || "09:00"
+	let end_time = 	$("#hurry-home-input_end_time").val() || "18:00"
 
 	let weekOfDay = moment().format("E") // 指定日期的周的第几天 1,2,3,4,5,6,7
 
@@ -20,10 +20,10 @@ $(function() {
 		'pay_day':15,
 	}
 
-	$("#msg").text(getRandomMsg(weekOfDay)) //鸡汤
+	$("#hurry-home-msg").text(getRandomMsg(weekOfDay)) //鸡汤
 
 	setInterval(function () {
-		
+
 		let go_home_time = moment().format("YYYY-MM-DD") + time_lists['off_work_time'] //今天下班的时间
 		let time = moment().format("YYYY-MM-DD  HH:mm:ss"); //当前的时间
 
@@ -39,7 +39,7 @@ $(function() {
 
 		// 获取本月底还剩多少天
 		let monthLastDay = moment().endOf('month').format('YYYY-MM-DD') + time_lists['off_work_time'] //月底
-		
+
 		monthLastDay = moment(monthLastDay, "YYYY-MM-DD HH:mm:ss");
 		var over_month = monthLastDay.diff(start_day, 'seconds')  //距离周末时间
 
@@ -57,31 +57,31 @@ $(function() {
 			// 工资在本月发放
 		}
 		let pain_msg = "我毕生的梦想，就是可以准点下班！";
-		
-		
+
+
 		// 每周
 		if(over_day < 0){
-			$("#week").text(pain_msg)  //week last day，属于加班
+			$("#hurry-home-week").text(pain_msg)  //week last day，属于加班
 		}else{
-			$("#week").text(secondToday(over_day))  //week last day
+			$("#hurry-home-week").text(secondToday(over_day))  //week last day
 		}
-		
+
 		//每天
 		if(every_day < 0){
-			$("#day").text("已经加班时间："+secondToday(Math.abs(every_day))+"，"+pain_msg)  //every day 加班
+			$("#hurry-home-day").text("已经加班时间："+secondToday(Math.abs(every_day))+"，"+pain_msg)  //every day 加班
 		}else{
 			// 如果是双休的话 需要加判断  现在双休还存在 下班时间
-			$("#day").text("距离下班还有："+secondToday(every_day))  //every day
+			$("#hurry-home-day").text("距离下班还有："+secondToday(every_day))  //every day
 		}
-		
+
 		// 月底
 		if(over_month < 0){
-			$("#month").text("明天又是新的一个月，请对我好点，期待！")  // month last day
+			$("#hurry-home-month").text("明天又是新的一个月，请对我好点，期待！")  // month last day
 		}else{
-			$("#month").text(secondToday(over_month))  // month last day
+			$("#hurry-home-month").text(secondToday(over_month))  // month last day
 		}
-		
-		$("#now_time").text(time)  // now time
+
+		$("#hurry-home-now_time").text(time)  // now time
 	},250)
 
 

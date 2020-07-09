@@ -1,38 +1,38 @@
 
 $(function(){
-	$("#input_start_time").val(localStorage.getItem("start_time") || "09:00");
-	$("#input_end_time").val(localStorage.getItem("end_time") || "18:00");
+	$("#hurry-home-input_start_time").val(localStorage.getItem("start_time") || "09:00");
+	$("#hurry-home-input_end_time").val(localStorage.getItem("end_time") || "18:00");
 })
 
-$("#double_github").on('click',function(e){
+$("#hurry-home-double_github").on('click',function(e){
 	localStorage.setItem('vacation_type',2);
 	alert('设置成功')
 })
 
-$("#size_week").on('click',function(e){
+$("#hurry-home-size_week").on('click',function(e){
 	localStorage.setItem('vacation_type',3);
 	alert('请手动本周是双休还是单休。')
 })
 
-$("#single_week").on('click',function(e){
+$("#hurry-home-single_week").on('click',function(e){
 	localStorage.setItem('vacation_type',1);
 	alert('设置成功')
 })
-$("#to_github").on('click',function(e){
+$("#hurry-home-to_github").on('click',function(e){
 	window.open("https://github.com/sbjim/go-home","_blank");
 })
 // 开始时间
-$("#input_start_time").on("blur",function(e){
+$("#hurry-home-input_start_time").on("blur",function(e){
 	let val = $(this).val();
 	if(val == '') alert('开始时间不能为空')
-	let start_time = 	$("#input_start_time").val();
+	let start_time = 	$("#hurry-home-input_start_time").val();
 	localStorage.setItem("start_time",start_time)
 })
 // 结束时间
-$("#input_end_time").on("blur",function(e){
+$("#hurry-home-input_end_time").on("blur",function(e){
 	let val = $(this).val();
 	if(val == '') alert('结束时间不能为空')
-	let end_time = 	$("#input_end_time").val();
+	let end_time = 	$("#hurry-home-input_end_time").val();
 	localStorage.setItem("end_time",end_time)
 
 })
