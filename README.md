@@ -2,10 +2,17 @@
 ## 如果喜欢的话 点击右上角 `Star` 给我个小星星吧~~~
 
 
-
 ## Chrome官网 插件下载地址:
 
   chrome商城地址：  [点击下载](https://chrome.google.com/webstore/detail/hurry-home-%E4%B8%8B%E7%8F%AD%E5%9B%9E%E5%AE%B6/ndccpjjadppbehafiojmiknfihpmaodj?hl=zh-CN&authuser=0)
+
+
+## 我想说 2020-11-28 9:25
+```
+我想，作为码农来讲，讲真。最开心的话，可能就是开发出来的产品/项目能够真正的帮助到别人，得到别人的肯定吧。
+开心。
+```
+![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8bc7787a7ed84788877fa601d0830c43~tplv-k3u1fbpfcp-watermark.image)
 
 
 ### 安装教程
