@@ -1,10 +1,9 @@
 {
-	"manifest_version":2,
-	"name":"Hurry home & 下班回家",
+	"manifest_version": 2,
+	"name": "Hurry home & 下班回家",
 	"description": "平平安安上班，高高兴兴下班",
-	"version": "2.1.1",
-	"browser_action":
-	{
+	"version": "2.1.2",
+	"browser_action": {
 		"default_icon": "images/icon16.png",
 		"default_title": "Hurry home & 下班回家",
 		"default_popup": "index.html"
@@ -14,9 +13,18 @@
 		"48": "images/icon48.png",
 		"128": "images/icon128.png"
 	},
-	"content_scripts": [ {
-		"js": [ "./js/jquery.js","./js/func.js","./js/index.js","./js/moment.js"],
-		"matches": [ "http://*/*", "https://*/*"]
-	}]
-
+	"content_scripts": [
+		{
+			"js": [
+				"./js/jquery.js",
+				"./js/func.js",
+				"./js/index.js",
+				"./js/moment.min.js"
+			],
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			]
+		}
+	]
 }
