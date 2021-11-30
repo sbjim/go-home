@@ -19,7 +19,8 @@
 				"./js/jquery.js",
 				"./js/func.js",
 				"./js/index.js",
-				"./js/moment.min.js"
+				"./js/moment.min.js",
+				"./js/zh-cn.js"
 			],
 			"matches": [
 				"http://*/*",
